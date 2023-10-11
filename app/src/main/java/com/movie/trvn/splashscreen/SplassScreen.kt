@@ -40,7 +40,7 @@ class SplassScreen : AppCompatActivity() {
             .setTitle("Koneksi Error")
             .setMessage("Periksa jaringan internet anda dan coba lagi.")
             .setPositiveButton("OK") { _, _ ->
-                finish()
+                navigateToHome()
             }
             .setCancelable(false)
             .create()

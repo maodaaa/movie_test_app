@@ -61,7 +61,6 @@ class MainActivity : AppCompatActivity() {
 
         if (requestCode == REQUEST_NOTIFICATION_PERMISSION) {
             if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                showSnackbar("Permission Granted")
             } else {
                 requestNotificationPermission()
             }
